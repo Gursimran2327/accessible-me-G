@@ -1,17 +1,33 @@
 body {
   font-family: 'Roboto', Helvetica, sans-serif;
-  background-color: grey;
+  background-color: lightgrey;
   margin: 0;
   padding: 0;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h1, h2, h3, h4, h5, h6 {
   font-family: 'Stick No Bills', 'Roboto', Helvetica, sans-serif;
+  line-height: 1.2;
+}
+
+h1 {
+  font-size: 2rem;
+  color: brown;
+}
+
+h2 {
+  font-size: 1.8rem;
+  color: brown;
+}
+
+h3 {
+  font-size: 1.5rem;
+  color: brown;
+}
+
+h4 {
+  font-size: 1.2rem;
+  color: brown;
 }
 
 .container {
@@ -21,7 +37,15 @@ h6 {
 }
 
 img {
-  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
+
+header[itemscope][itemtype="http://schema.org/Organization"] {
+  background-color: #333;
+  color: white;
+  padding: 1rem;
 }
 
 .main-nav ul {
@@ -42,6 +66,14 @@ img {
   color: inherit;
   text-decoration: none;
   font-size: 1.25rem;
+  padding: 1rem;
+}
+
+form[action="thanks.html"] {
+  background-color: #f9f9f9;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 form input,
@@ -49,7 +81,10 @@ form textarea {
   display: block;
   width: 100%;
   margin-bottom: 1rem;
-  padding: .5rem 1rem;
+  padding: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
 }
 
 form textarea {
@@ -60,12 +95,36 @@ form textarea {
 }
 
 form button {
-  background: none;
-  border: 2px solid black;
+  background-color: #4285f4;
+  color: white;
+  border: 2px solid #4285f4;
+  border-radius: 4px;
   padding: 1rem;
   text-transform: uppercase;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+form button:hover {
+  background-color: #357ae8;
 }
 
 .site-footer {
   padding: 2rem 0;
+  text-align: center;
+}
+
+address {
+  font-style: italic;
+  margin-bottom: 1rem;
+}
+
+blockquote {
+  margin: 0 0 1rem;
+  padding: 0 1rem;
+  border-left: 2px solid #cec1c1;
+}
+
+q {
+  font-style: italic;
 }
